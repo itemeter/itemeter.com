@@ -3,8 +3,13 @@
 body {
   font-family: 'Nanum Myeongjo', serif;
   font-size: 18px;
+  background: url(./images/bg.jpg) no-repeat;
+  background-size: cover;
 }
 
+h1 {
+  font-family: 'Crimson Text', serif;
+}
 .sticky-nav {
   position: fixed;
   top: 0;
@@ -16,10 +21,35 @@ body {
   font-family: 'Crimson Text', serif;
   font-size: 24px;
 }
-.sticky-nav .nav-link {
-  padding: 0 0.5rem;
-  color: #333;
+
+.screen {
+  position: relative;
 }
-.content {
-  margin-top: 6rem;
+
+.screen .screen-shadow {
+  position: relative;
+  width: 250px;
+  height: 550px;
+  top: 20px;
+  left: 20px;
+  margin-bottom: -550px;
+  box-shadow: 0 40px 80px rgba(0, 0, 0, 0.75);
 }
+
+.screen .frame {
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.screen .inner {
+  position: relative;
+  top: -607px;
+  height: 607px;
+  margin-bottom: -607px;
+  left: 7px;
+  z-index: 1;
+  border-radius: 40px;
+}
+

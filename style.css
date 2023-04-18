@@ -7,9 +7,10 @@ body {
   background-size: cover;
 }
 
-h1 {
+h1, h2 {
   font-family: 'Crimson Text', serif;
 }
+
 .sticky-nav {
   position: fixed;
   top: 0;

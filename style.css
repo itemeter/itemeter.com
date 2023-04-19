@@ -1,14 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600&family=Nanum+Myeongjo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600&family=Kameron:wght@400;700&family=Nanum+Myeongjo&display=swap');
 
 body {
   font-family: 'Nanum Myeongjo', serif;
   font-size: 18px;
-  background: url(./images/bg.jpg) no-repeat;
-  background-size: cover;
+  background: url(./images/bg.jpg);
 }
 
-h1, h2 {
+h1, h2, h3 {
   font-family: 'Crimson Text', serif;
+}
+
+.price {
+  font-family: 'Kameron', serif;
 }
 
 .sticky-nav {

@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="./style.css">
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://kit.fontawesome.com/ce5672c0b9.js" crossorigin="anonymous"></script>
     <title>itemter &middot; shop efficiently</title>
   </head>
   <body>
@@ -147,8 +146,8 @@
 
       <section>
         <div class="max-w-screen-xl px-4 py-8 mx-auto text-center lg:py-16 lg:grid-cols-12">
-          <h1 class="text-4xl tracking-tight leading-none md:text-5xl xl:text-6xl text-gray-700">
-            You can benefit more than you think
+          <h1 class="text-4xl tracking-tight leading-none lg:text-5xl text-gray-700">
+            What does it has to offer?
           </h1>
         </div>
         <div class="container px-8 py-2 lg:px-40 mx-auto">
@@ -160,7 +159,7 @@
                 </div>
                 <div>
                   <h2 class="text-gray-800 text-3xl mb-4">Easy to use</h2>
-                  <p class="text-gray-400">
+                  <p class="text-gray-600">
                   Simply download the app. Use your social profile to login or sign up with your own email.
                   </p>
                 </div>
@@ -174,7 +173,7 @@
                 </div>
                 <div>
                   <h2 class="text-gray-800 text-3xl mb-4">30 days free trial</h2>
-                  <p class="text-gray-400">
+                  <p class="text-gray-600">
                   Get started today for free. No credit card required. Simply sign up and start your experiment.
                   </p>
                 </div>
@@ -188,7 +187,7 @@
                 </div>
                 <div>
                   <h2 class="text-gray-800 text-3xl mb-4">Share with family</h2>
-                  <p class="text-gray-400">
+                  <p class="text-gray-600">
                   It's much easier to keep track your family's need by sharing with other members of the family.
                   </p>
                 </div>
@@ -198,38 +197,142 @@
           </div>
       </section>
 
-
+      <section>
+        <div class="max-w-screen-xl px-4 py-8 mx-auto text-center lg:py-16 lg:grid-cols-12">
+          <h1 class="text-4xl tracking-tight leading-none lg:text-5xl text-gray-700">
+            How much does it cost?
+          </h1>
         </div>
+        <div class="container mx-auto px-8 md:px-12 lg:px-20">
+          <div class="m-auto -space-y-4 items-center justify-center md:flex md:space-y-0 md:-space-x-4 xl:w-10/12">
+            <div class="relative z-10 -mx-4 group lg:w-5/12">
+              <div aria-hidden="true" class="absolute top-0 w-full h-full rounded-2xl bg-white shadow-xl transition duration-500 lg:group-hover:scale-110">
 
-        <footer class="relative bg-white/50 mt-10 pt-8 pb-6">
-          <div class="container mx-auto px-4 lg:px-40">
-            <div class="flex flex-wrap text-left items-end">
-              <div class="w-full lg:w-6/12 px-4">
-                <h4 class="text-3xl text-gray-700">Let's keep in touch!</h4>
-                <h5 class="text-lg mt-0 mb-2 text-gray-600">
-                  Find us on any of these platforms, we respond 1-2 business days.
-                </h5>
-                <div class="mt-6 lg:mb-0 mb-6">
-                  <button class="bg-white text-blue-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2" type="button">
-                    <i class="fa fa-twitter"></i>
-                  </button>
-
-                  <button class="bg-white text-blue-600 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2" type="button">
-                    <i class="fa fa-facebook-square"></i>
-                  </button>
-                  <button class="bg-white text-pink-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2" type="button">
-                    <i class="fa fa-envelope"></i>
-                  </button>
-                </div>
               </div>
-              <div class="w-full lg:w-6/12 px-4 ml-auto lg:text-right">
-                <div class="text-gray-500">
-                  Copyright © 2023 itemeter by <a href="https://namnd.com" class="text-blue-500 hover:text-gray-500" target="_blank">namnd</a>
+              <div class="relative p-6 space-y-6 lg:p-8">
+                <div class='flex items-center justify-center'>
+                  <ul class="mx-auto grid grid-cols-2 gap-x-2 p-2 bg-gray-100 rounded-full">
+                    <li>
+                      <input class="peer sr-only" type="radio" value="yes" name="answer" id="yes" checked />
+                      <label class="flex text-xl justify-center cursor-pointer rounded-full bg-gray-100 py-2 px-4 focus:outline-none peer-checked:border-transparent peer-checked:ring-2 peer-checked:ring-purple-500 peer-checked:bg-purple-500 peer-checked:text-white" for="yes">Monthly</label>
+
+                      <div class="absolute left-0 w-full text-center p-6 mt-2 mx-auto transition-all duration-500 ease-in-out translate-y-10 opacity-0 invisible peer-checked:opacity-100 peer-checked:visible peer-checked:translate-y-1">
+                        <span class="text-6xl lg:text-7xl price text-gray-800 font-bold leading-0">
+                          <span class="text-white">$</span>
+                          0
+                          <span class="text-white">.99</span>
+                        </span>
+                      </div>
+                    </li>
+
+                    <li>
+                      <input class="peer sr-only" type="radio" value="no" name="answer" id="no" />
+                      <label class="flex text-xl justify-center cursor-pointer rounded-full bg-gray-100 py-2 px-4 focus:outline-none peer-checked:border-transparent peer-checked:ring-2 peer-checked:ring-purple-500 peer-checked:bg-purple-500 peer-checked:text-white" for="no">Annually</label>
+
+                      <div class="absolute left-0 w-full text-center p-6 mt-2 mx-auto transition-all duration-500 ease-in-out -translate-y-10 opacity-0 invisible peer-checked:opacity-100 peer-checked:visible peer-checked:translate-y-1">
+                        <span class="text-6xl lg:text-7xl price text-gray-800 font-bold leading-0">
+                          <span class="text-white">$</span>
+                          9
+                          <span class="text-white">.99</span>
+                        </span>
+                      </div>
+                    </li>
+
+                  </ul>
                 </div>
+
+                <div>
+                  <div class="relative flex justify-around">
+                    <div class="flex items-end">
+                      <span class="text-6xl lg:text-7xl price text-gray-600 font-bold leading-0 mt-1">$&nbsp;&nbsp;.99</span>
+                    </div>
+                  </div>
+                </div>
+                <button type="submit" title="Submit" class="block w-full opacity-50 py-3 px-6 text-center rounded-xl transition bg-blue-600">
+                  <span class="text-white">
+                    Subscribe now
+                  </span>
+                </button>
+              </div>
+            </div>
+
+            <div class="relative group lg:w-7/12">
+              <div aria-hidden="true" class="absolute top-0 w-full h-full rounded-2xl bg-white shadow-lg transition duration-500 group-hover:scale-105"></div>
+              <div class="relative p-4 pt-8 md:p-8 md:pl-12 md:rounded-r-2xl lg:pl-20 lg:p-8">
+                <ul role="list" class="space-y-4 py-2 text-gray-600">
+                  <li class="space-x-2 lg:space-x-3 flex items-center">
+                    <span>
+                      <svg width="30px" height="30px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path id="Vector" d="M3.99989 4L19.9999 20M16.4999 16.7559C15.1473 17.4845 13.6185 17.9999 11.9999 17.9999C8.46924 17.9999 5.36624 15.5478 3.5868 13.7788C3.1171 13.3119 2.88229 13.0784 2.7328 12.6201C2.62619 12.2933 2.62616 11.7066 2.7328 11.3797C2.88233 10.9215 3.11763 10.6875 3.58827 10.2197C4.48515 9.32821 5.71801 8.26359 7.17219 7.42676M19.4999 14.6335C19.8329 14.3405 20.138 14.0523 20.4117 13.7803L20.4146 13.7772C20.8832 13.3114 21.1182 13.0779 21.2674 12.6206C21.374 12.2938 21.3738 11.7068 21.2672 11.38C21.1178 10.9219 20.8827 10.6877 20.4133 10.2211C18.6338 8.45208 15.5305 6 11.9999 6C11.6624 6 11.3288 6.02241 10.9999 6.06448M13.3228 13.5C12.9702 13.8112 12.5071 14 11.9999 14C10.8953 14 9.99989 13.1046 9.99989 12C9.99989 11.4605 10.2135 10.9711 10.5608 10.6113" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    </span>
+                    <span>No hidden fee.</span>
+                  </li>
+                  <li class="space-x-2 lg:space-x-3 flex items-center">
+                    <span>
+                      <svg width="30px" height="30px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17 12C15.8757 13.1243 11.5 16.5 11.5 16.5M17 12C20 9 20 7 20 4C17 4 15 4 12 7M17 12L17.4752 14.376C17.8031 16.0153 17.29 17.71 16.1078 18.8922L14.9374 20.0626C14.4676 20.5324 13.6788 20.4219 13.3562 19.8411L11.5 16.5M12 7L7.5 12.5M12 7L9.62395 6.52479C7.98465 6.19693 6.28996 6.71004 5.10784 7.89216L3.93743 9.06257C3.46765 9.53235 3.57813 10.3212 4.1589 10.6438L7.5 12.5M7.5 12.5L11.5 16.5M15.5 8.50049L14.5 9.50049M3 21L6.39223 20.3216C7.32708 20.1346 8 19.3138 8 18.3604L8 18C8 16.8954 7.10457 16 6 16L5.63961 16C4.68625 16 3.86542 16.6729 3.67845 17.6078L3 21Z" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    </span>
+                    <span>Get future features for free.</span>
+                  </li>
+                  <li class="space-x-2 lg:space-x-3 flex items-center">
+                    <span>
+                      <svg width="30px" height="30px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path id="Vector" d="M5.75 5.75L18.25 18.25M12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12C21 16.9706 16.9706 21 12 21Z" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    </span>
+                    <span>Cancel subscription anytime easily.</span>
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
-        </footer>
+        </div>
+
+      </section>
+
+      <footer class="relative bg-white/50 mt-10 pt-8 pb-6">
+        <div class="container mx-auto px-4 lg:px-40">
+          <div class="flex flex-wrap text-left items-end">
+            <div class="w-full lg:w-6/12 px-4">
+              <h4 class="text-3xl text-gray-700">Let's keep in touch!</h4>
+              <h5 class="text-lg mt-0 mb-2 text-gray-600">
+                Find us on any of these platforms, we respond 1-2 business days.
+              </h5>
+              <div class="mt-6 lg:mb-0 mb-6">
+                <button class="bg-white text-blue-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2" type="button">
+                  <span>
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="p-2"
+                        fill="currentColor"
+                        style="color: #1da1f2"
+                        viewBox="0 0 24 24">
+                      <path
+                          d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z" />
+                    </svg>
+                  </span>
+                </button>
+
+                <button class="bg-white text-pink-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2" type="button">
+                  <span>
+                    <svg class="p-2" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M4 9.00005L10.2 13.65C11.2667 14.45 12.7333 14.45 13.8 13.65L20 9" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M3 9.17681C3 8.45047 3.39378 7.78123 4.02871 7.42849L11.0287 3.5396C11.6328 3.20402 12.3672 3.20402 12.9713 3.5396L19.9713 7.42849C20.6062 7.78123 21 8.45047 21 9.17681V17C21 18.1046 20.1046 19 19 19H5C3.89543 19 3 18.1046 3 17V9.17681Z" stroke="#4b5563" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                  </span>
+                </button>
+              </div>
+            </div>
+            <div class="w-full lg:w-6/12 px-4 ml-auto lg:text-right">
+              <div class="text-gray-500">
+                Copyright © 2023 itemeter by <a href="https://namnd.com" class="text-blue-500 hover:text-gray-500" target="_blank">namnd</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
   </body>
 
   <script>

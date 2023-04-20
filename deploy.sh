@@ -8,4 +8,4 @@ aws s3 sync . s3://itemeter.com \
 
 aws cloudfront create-invalidation \
   --distribution-id "E2SFD9FX0N3KNR" \
-  --paths "/"
+  --paths "/*"

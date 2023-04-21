@@ -169,16 +169,17 @@
             </a>
           </div>
         </div>
-        <div class="lg:mt-0 lg:col-span-4 lg:flex">
+        <div class="lg:mt-0 lg:col-span-4 lg:flex mx-auto">
           <div class="screen">
             <div class="screen-shadow shadow-2xl"></div>
             <img src="./images/mobile-frame.svg" class="frame" />
             <img src="./images/screen-collection.png" class="inner" />
+            <img src="./images/screen-shopping-list.png" class="inner" />
           </div>
-          <div class="flex items-center ml-8">
-            <div class="flex-col space-y-2">
-              <a class="bg-white/50 hover:bg-white cursor-pointer shadow-lg h-6 w-6 flex rounded-full"></a>
-              <a class="bg-white/50 hover:bg-white cursor-pointer shadow-lg h-6 w-6 flex rounded-full"></a>
+          <div class="flex items-center justify-center m-4">
+            <div class="flex space-x-3 lg:flex-col lg:space-x-0 lg:space-y-3 z-50">
+              <a onClick="showScreen(1)" class="dot bg-white hover:bg-white cursor-pointer shadow-lg h-6 w-6 flex rounded-full"></a>
+              <a onClick="showScreen(2)" class="dot bg-white hover:bg-white cursor-pointer shadow-lg h-6 w-6 flex rounded-full"></a>
             </div>
 
           </div>
@@ -343,19 +344,19 @@
       <div class="container mx-auto px-8 lg:px-44">
         <p><b>itemeter</b> is committed to protecting the privacy of its users. This privacy policy explains how we collect, use, and disclose personal information.</p>
         <h4 class="py-2"><b>Information we collect</b></h4>
-        <ul class="list-disc ml-4 lg:ml-6">
+        <ul class="list-disc ml-5 lg:ml-6">
           <li>Email address: We collect your email address when you sign up for an account.</li>
           <li>User data: We store user data on the AWS cloud provider, including user preferences and activity.</li>
         </ul>
 
         <h4 class="py-2"><b>How we use your information</b></h4>
-        <ul class="list-disc ml-4 lg:ml-6">
+        <ul class="list-disc ml-5 lg:ml-6">
           <li>Email address: We use your email address to send you important information about your account, such as password reset instructions and account updates.</li>
           <li>User data: We use your user data to provide you with a personalized experience in the app.</li>
         </ul>
 
         <h4 class="py-2"><b>How we disclose your information</b></h4>
-        <ul class="list-disc ml-4 lg:ml-6">
+        <ul class="list-disc ml-5 lg:ml-6">
           <li>We do not sell or rent your personal information to third parties.</li>
           <li>We may share your personal information with our service providers who assist us in providing the app to you.</li>
           <li>We may disclose your personal information if required by law or if we believe that such action is necessary to protect and defend the rights, property, or personal safety of <b>itemeter</b>, our users, or the public.</li>
@@ -417,8 +418,22 @@
   </body>
 
   <script>
+    function showScreen(n) {
+      let screens = document.getElementsByClassName("inner");
+      let dots = document.getElementsByClassName("dot");
+      for (i = 0; i < screens.length; i++) {
+        screens[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].classList.add('opacity-50');
+      }
+      dots[n-1].classList.remove('opacity-50');
+      screens[n-1].style.display = 'block';
+    }
+
     // Burger menus
     document.addEventListener('DOMContentLoaded', function() {
+      showScreen(1);
       // open
       const burger = document.querySelectorAll('.navbar-burger');
       const menu = document.querySelectorAll('.navbar-menu');

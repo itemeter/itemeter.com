@@ -2,6 +2,8 @@
 
 aws s3 sync . s3://itemeter.com \
   --exclude '.git*' \
+  --exclude 'src.css' \
+  --exclude 'tailwind.config.js' \
   --exclude '*.DS_Store*' \
   --exclude '*.sh' \
   --exclude 'Session.vim'
